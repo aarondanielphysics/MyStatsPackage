@@ -12,4 +12,3 @@ jobs:
           version: '1.9'
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
-		
