@@ -14,7 +14,7 @@ function rse_mean(arg)
 
     ## function that calculates the mean of a list of numbers given in a vector 
 
-    return res_sum(arg)/length(arg)
+    return rse_sum(arg)/length(arg)
 end
 
 function rse_std(arg)
