@@ -1,0 +1,11 @@
+name = "MyStatsPackage"
+uuid = "c532ca38-d4ba-4b3c-bc8c-66066da61c02"
+authors = ["aarondanielyphysics <aaron.daniel@unibas.ch>"]
+version = "0.1.0"
+
+[deps]
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+
+[compat]
+
+ProgressMeter = "1"
