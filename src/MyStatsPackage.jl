@@ -3,7 +3,7 @@ module MyStatsPackage
 using ProgressMeter
 include("statistic_functions.jl")
 
-export rse_sum , rse_mean , rse_std , rse_tstat , printowner
+export rse_sum , rse_mean , rse_std , rse_tstat , printOwner , printContributor
 
 struct StatResult
            x :: Vector
