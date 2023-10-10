@@ -1,11 +1,6 @@
 name: runtests
 
-on: 
-  push:
-    branches:
-      - master
-      - main
-  pull_request:
+on: [push]
 
 jobs:
   test:
