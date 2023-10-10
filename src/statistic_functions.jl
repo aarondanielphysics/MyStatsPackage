@@ -28,6 +28,11 @@ function rse_tstat(arg; σ = rse_std(arg), nn = length(arg) )
 
 end
 
-function printowner() 
-    println("Aaron Daniel")
+function printOwner() 
+    println("https://github.com/aarondanielphysics")
+end
+
+
+function printContributor() 
+    println("https://github.com/marcelojbp")
 end
