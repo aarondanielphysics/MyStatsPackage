@@ -29,5 +29,5 @@ function rse_tstat(arg; σ = rse_std(arg), nn = length(arg) )
 end
 
 function printowner() 
-    println(Aaron Daniel)
+    println("Aaron Daniel")
 end
