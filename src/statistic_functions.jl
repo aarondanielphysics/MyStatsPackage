@@ -27,3 +27,7 @@ function rse_tstat(arg; σ = rse_std(arg), nn = length(arg) )
     return rse_mean(arg) / ( σ /sqrt(nn) )
 
 end
+
+function printowner() 
+    println(Aaron Daniel)
+end
