@@ -3,13 +3,13 @@ module MyStatsPackage
 using ProgressMeter
 include("statistic_functions.jl")
 
-export rse_sum , rse_mean , rse_std , rse_tstat , printOwner , printContributor
+export rse_sum, rse_mean, rse_std, rse_tstat, printOwner, printContributor
 
 struct StatResult
-           x :: Vector
-           n :: Int64
-           std :: Float64
-           tvalue :: Float64
+    x::Vector
+    n::Int64
+    std::Float64
+    tvalue::Float64
 end
 
 function StatResult(arg)
