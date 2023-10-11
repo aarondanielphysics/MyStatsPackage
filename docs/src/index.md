@@ -1,16 +1,8 @@
 ```@docs 
 rse_sum
 ```
-```@docs 
-rse_mean
-```
 
-```@docs 
-rse_std
-```
-
-
-An example: 
+An neat example: 
 
 ```@example MyScope
 x = [1,2,3]
