@@ -1,7 +1,21 @@
+"""
+
 function rse_sum(arg)
 
-    ## function that sums the entries of a vector 
+Sums the entries of the argument. 
 
+# Arguments 
+    - arg : a list of numbers 
+# Output 
+    - sum : a number 
+
+# Example 
+```julia-repl
+julia> rse_sum(1:3)
+6
+\```
+"""
+function rse_sum(arg)
     sum = 0
     for i = 1:length(arg)
         sum = sum + arg[i]
@@ -9,20 +23,65 @@ function rse_sum(arg)
     return sum
 end
 
+"""
 
 function rse_mean(arg)
 
-    ## function that calculates the mean of a list of numbers given in a vector 
+Computes the mean of the entries of arg 
 
+# Arguments 
+    - arg : a list of numbers 
+# Output 
+    - mean : a number  
+
+# Example 
+```julia-repl
+julia> rse_mean(1:3)
+2
+\```
+"""
+function rse_mean(arg)
     return rse_sum(arg) / length(arg)
 end
 
+"""
+
 function rse_std(arg)
 
-    ## function that calculates the standard deviation (std) of the entries of a vector 
-    return sqrt(sum((arg .- res_mean(arg)) .^ 2) / (length(arg) - 1))
+Computes the standard deviation of the entries of arg 
+
+# Arguments 
+    - arg : a list of numbers 
+# Output 
+    - std : a number   
+
+# Example 
+```julia-repl
+julia> rse_std(1:3)
+1
+\```
+"""
+function rse_std(arg)
+    return sqrt(sum((arg .- rse_mean(arg)) .^ 2) / (length(arg) - 1))
 end
 
+"""
+
+function rse_tstat(arg)
+
+Computes the t statistic value of the entries of arg 
+
+# Arguments 
+    - arg : a list of numbers 
+# Output 
+    - tvalue : a number   
+
+# Example 
+```julia-repl
+julia> rse_tstat(1:3)
+3.464101615137754
+\```
+"""
 function rse_tstat(arg; σ = rse_std(arg), nn = length(arg))
     return rse_mean(arg) / (σ / sqrt(nn))
 
