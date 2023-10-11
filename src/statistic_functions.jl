@@ -5,10 +5,9 @@ function rse_sum(arg)
 Sums the entries of the argument. 
 
 # Arguments 
- - arg : a list of numbers 
+ arg : a list of numbers 
 # Output 
-  - sum : a number 
-
+ sum : a number 
 # Example 
 
 ```julia-repl
@@ -32,9 +31,9 @@ function rse_mean(arg)
 Computes the mean of the entries of arg 
 
 # Arguments 
-    - arg : a list of numbers 
+    arg : a list of numbers 
 # Output 
-    - mean : a number  
+    mean : a number  
 
 # Example 
 ```julia-repl
@@ -53,9 +52,9 @@ function rse_std(arg)
 Computes the standard deviation of the entries of arg 
 
 # Arguments 
-    - arg : a list of numbers 
+    arg : a list of numbers 
 # Output 
-    - std : a number   
+    std : a number   
 
 # Example 
 ```julia-repl
@@ -74,9 +73,9 @@ function rse_tstat(arg)
 Computes the t statistic value of the entries of arg 
 
 # Arguments 
-    - arg : a list of numbers 
+    arg : a list of numbers 
 # Output 
-    - tvalue : a number   
+    tvalue : a number   
 
 # Example 
 ```julia-repl
