@@ -5,15 +5,17 @@ function rse_sum(arg)
 Sums the entries of the argument. 
 
 # Arguments 
-    - arg : a list of numbers 
+ - arg : a list of numbers 
 # Output 
-    - sum : a number 
+  - sum : a number 
 
 # Example 
+
 ```julia-repl
 julia> rse_sum(1:3)
 6
 \```
+
 """
 function rse_sum(arg)
     sum = 0
